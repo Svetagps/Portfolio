@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Светлана Нечепуренко</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+        }
+        .logo-container {
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 3s forwards;
+        }
+        .logo-container img {
+            width: 80%;
+            max-width: 500px;
+        }
+        
+        /* Анимация плавного появления и масштабирования */
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Убираем прокрутку */
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        // Через 5 секунд происходит редирект на основной сайт
+        setTimeout(function(){
+            window.location.href = "https://svetagps.github.io/portfolio"; // Укажите ссылку на ваш основной сайт
+        }, 5000); // 5000 миллисекунд = 5 секунд
+    </script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="your-logo.png" alt="Logo">
+    </div>
+</body>
+</html>
